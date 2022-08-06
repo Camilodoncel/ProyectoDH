@@ -47,15 +47,15 @@ const DateRangeComp = () => {
   return (
     <CalendarStyled>
     <div className="calendarWrap" >
-      
+      <div className='iconInput'>
       <input
-        placeholder={("Check in - Check out"
-        )}
-        className="inputBox"
-        readOnly
-        onClick={ () => setOpen(open => !open) }
-        
-      />
+          placeholder={("Check in - Check out"
+          )}
+          className="inputBox"
+          readOnly
+          onClick={ () => setOpen(open => !open) }
+        />
+      </div>
 
 
       <div ref={refOne}>
