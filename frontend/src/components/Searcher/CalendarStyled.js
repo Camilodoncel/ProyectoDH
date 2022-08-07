@@ -15,9 +15,7 @@ export const CalendarStyled = styled.div`
      text-align: center;
      position: relative;
   }
-  .inputBox:active{
-    border-color: red !important;
-  }
+
   .rdrDateDisplay{
     color: rgb(34,195,155) !important;
   }
@@ -71,26 +69,43 @@ export const CalendarStyled = styled.div`
   width: 340px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+  background:rgb(34,195,155);
+  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+  }
+
+
 .rdrMonthAndYearWrapper{
   width: 340px;
   border:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgb(34,195,155) !important;
 }
 .rdrMonthPicker{
   color: rgb(34,195,155) !important;
+  background:rgb(34,195,155);
+  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+  border-radius: 5px 5px 5px 5px;
+}
+.rdrYearPicker{
+  background:rgb(34,195,155);
+  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+  width: 100px;
+  justify-content: center;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .rdrMonthAndYearWrapper{
   width: 340px;
   border-bottom:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white  !important;
 }
 .rdrMonth{
   width: 320px;
   border:none;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white !important;
 }
 
 @media(min-width:376px ){
@@ -113,20 +128,32 @@ export const CalendarStyled = styled.div`
   width: 340px;
   border:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: red !important;
 }
 .rdrMonthAndYearWrapper{
   width: 340px;
   border:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: blue !important;
 }
 .rdrMonthPicker{
   color: rgb(34,195,155) !important;
+  background:rgb(34,195,155);
+  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+  border-radius: 5px 5px 5px 5px;
 }
-
+.rdrYearPicker{
+  background:rgb(34,195,155);
+  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+  width: 100px;
+  justify-content: center;
+  border-radius: 5px 5px 5px 5px;
+}
 .rdrMonthAndYearWrapper{
   width: 342px;
   border:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white !important;
 }
 .rdrMonth{
   width: 320px;
@@ -134,9 +161,10 @@ export const CalendarStyled = styled.div`
   border: none;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white !important;
 }
 }
-@media(min-width:640px ){
+@media(min-width:768px ){
   .inputBox{
       background-color:#FFFFFF;
      color:#607D8B;
@@ -156,20 +184,34 @@ export const CalendarStyled = styled.div`
   width: 260px;
   border:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white !important;
 }
 .rdrMonthAndYearWrapper{
   width: 260px;
   border:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white !important;
 }
 .rdrMonthPicker{
   color: rgb(34,195,155) !important;
+  background:rgb(34,195,155);
+  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+  border-radius: 5px 5px 5px 5px;
+  width: 70px;
+}
+.rdrYearPicker{
+  background:rgb(34,195,155);
+  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+  width: 70px;
+  justify-content: center;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .rdrMonthAndYearWrapper{
   width: 260px;
   border:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white !important;
 }
 .rdrMonth{
   width: 240px;
@@ -177,6 +219,7 @@ export const CalendarStyled = styled.div`
   border: none;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white !important;
 }
 }
 

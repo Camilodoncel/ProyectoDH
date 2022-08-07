@@ -161,7 +161,7 @@ export const SearcherStyled = styled.div`
      height: 40px;
      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
   }
-  @media(min-width:640px ){
+  @media(min-width:768px ){
      section{
     display: flex;
     width: 100%;
