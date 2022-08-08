@@ -7,7 +7,7 @@ const ProductList = () => {
   const [product, setProduct] = useState(Products);
   return (
     <ProductStyled>
-      <section class="productList">
+      <section className="productList">
         {Products.map((product, index) => {
           return (
             <Product

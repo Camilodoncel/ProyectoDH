@@ -10,7 +10,7 @@ export const MenuButtonWrapper = styled.button`
  
 
 
-  @media only screen and (min-width: 641px) {
+  @media only screen and (min-width: 768px) {
     display: none;
   }
 `;
@@ -21,7 +21,7 @@ left: 80%;
 top: 7%;
 
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 768px) {
     display: none;
   }
 
@@ -36,7 +36,7 @@ top: 5%;
 
 
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 768px) {
     display: none;
   }
 

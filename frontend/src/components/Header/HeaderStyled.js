@@ -28,10 +28,11 @@ button{
     display:none;
 }
 
-@media screen and (min-width: 641px)  {
+@media screen and (min-width: 768px)  {
 
     display: flex;
     justify-content: space-between;
+        height: 11vh;
     
 
 
@@ -71,7 +72,8 @@ button{
 
     }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1365px) {
+    height: 15vh;
 
     .containerButton{
         display:flex;
@@ -86,6 +88,7 @@ button{
     width: 100%;
     padding-left: 0;
     background-image: none;}
+    
 
     
 }

@@ -19,7 +19,7 @@ const DateRangeComp = () => {
       startDate: new Date(),
       endDate: addDays(new Date(), 1),
       key: 'selection'
-    },
+    }
    ])
 
 

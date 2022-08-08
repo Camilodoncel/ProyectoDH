@@ -5,7 +5,9 @@ const CardCategory = ({img, category, info}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const click = () => {
-    setIsOpen(true);
+    if(setIsOpen === true){
+      return setIsOpen === false
+    }
   };
 
   return (

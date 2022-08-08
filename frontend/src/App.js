@@ -11,10 +11,7 @@ function App() {
   return (
     <div className="App">
       <Routers/>
-      <Searcher/>
-      <Categories/>
-      <ProductList/>
-      <Footer/>
+
     </div>
   );
 }

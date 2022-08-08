@@ -52,7 +52,7 @@ a{
   color: #263238;
 }
 
-  @media only screen and (min-width: 641px) {
+  @media only screen and (min-width: 768px) {
     display: none;
   }
 

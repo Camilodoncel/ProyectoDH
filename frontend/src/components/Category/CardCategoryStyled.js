@@ -32,12 +32,17 @@ export const CardStyled = styled.div`
     padding-right: 2%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    cursor: pointer;
   }
 
+p{
+  cursor:default;
+}
 
   h2{
    
     width: 25rem;
+    cursor: pointer;
 
   }
 
@@ -92,6 +97,7 @@ export const CardStyled = styled.div`
 `;
 
 export const CointanerStyled = styled.div`
+margin-bottom:20px;
 display: flex;
 width: 5%;
 @media screen and (min-width: 641px)  {

@@ -161,6 +161,16 @@ export const SearcherStyled = styled.div`
      height: 40px;
      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
   }
+
+  .search:hover{
+  color:white;
+  border:1px solid white;
+  box-shadow: 0 0 0px rgb(34,195,155),
+                0 0 5px rgb(34,195,155),
+                0 0 5px rgb(34,195,155);
+  background:rgb(34,195,155);
+  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+  }
   @media(min-width:768px ){
      section{
     display: flex;
