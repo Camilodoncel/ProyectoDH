@@ -3,6 +3,8 @@ import Header from "./components/Header/Header"
 import { Searcher } from './components/Searcher/Searcher.js';
 import  Routers   from "./Routes/Routers.js"
 import ProductList from './components/products/ProductList'
+import Footer from './components/Footer/Footer'
+import Categories from './components/Category/Categories'
 
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
     <div className="App">
       <Routers/>
       <Searcher/>
+      <Categories/>
       <ProductList/>
+      <Footer/>
     </div>
   );
 }

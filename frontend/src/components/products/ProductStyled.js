@@ -1,5 +1,7 @@
 import styled from "styled-components";
-export const ProductStyled = styled.div`
+export const ProductStyled = styled.section`
+justify-content:center;
+align-items: center;
 .productList{
   display: flex;
   flex-direction: column;
@@ -90,7 +92,7 @@ export const ProductStyled = styled.div`
     height: auto;
     width: auto;
     max-width:372px;
-    max-height: 100%;
+    max-height: 348px;
     min-width: 372px;
     object-fit: contain;
     border-radius: 8px 0px 0 0;
@@ -105,13 +107,20 @@ export const ProductStyled = styled.div`
   .productList{
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-left: 30px;
-  margin-right: 30px;
+
+}
+.description{
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  line-height: 16.41px;
+  max-height: 50px;
 }
 
 .cardProduct:hover{
   cursor: pointer;
 }
+
 .cardProduct:before {
     content: '';
     background: rgba(237, 235, 234 ) ;
@@ -170,5 +179,18 @@ export const ProductStyled = styled.div`
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+.cardProduct{
+  max-width: 635px;
+}
+.imgProduct{
+    height: auto;
+    width: auto;
+    max-width:372px;
+    height: 348px;
+    min-width: 372px;
+    object-fit: contain;
+    border-radius: 8px 0px 0 0;
+
+  }
 }
 `

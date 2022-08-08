@@ -20,7 +20,8 @@ export const NavbarWrapper = styled.nav`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background-color: #FBC02D;
+  background:rgb(34,195,155);
+  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
   width: 100%;
   height: 20vh;
   position: relative;

@@ -8,9 +8,10 @@ const ProductList = () => {
   return (
     <ProductStyled>
       <section class="productList">
-        {Products.map((product) => {
+        {Products.map((product, index) => {
           return (
             <Product
+              key = {index}
               crimg={product.crimg}
               category={product.category}
               title={product.title}
