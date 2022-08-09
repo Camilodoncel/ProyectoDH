@@ -148,6 +148,18 @@ align-items: center;
   line-height: 16.41px;
   max-height: 50px;
 }
+.verMas:hover{
+  color:white;
+  border:1px solid white;
+  box-shadow: 0 0 0px rgb(34,195,155),
+                0 0 5px rgb(34,195,155),
+                0 0 5px rgb(34,195,155);
+  background:rgb(34,195,155);
+  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+}
+.verMas:hover polyline{
+    stroke-dashoffset: -460;
+}
 .cardProduct:hover{
   cursor: pointer;
 }
@@ -176,18 +188,7 @@ align-items: center;
 .cardProduct:hover:before {
     opacity: 1;
 }
-.verMas:hover{
-  color:white;
-  border:1px solid white;
-  box-shadow: 0 0 0px rgb(34,195,155),
-                0 0 5px rgb(34,195,155),
-                0 0 5px rgb(34,195,155);
-  background:rgb(34,195,155);
-  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
-}
-.verMas:hover polyline{
-    stroke-dashoffset: -460;
-}
+
 .cardProduct:after {
     z-index: -1;
     content: '';

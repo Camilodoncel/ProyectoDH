@@ -85,6 +85,50 @@ p{
     
   
   }
+  .accordion-item:hover{
+  cursor: pointer;
+}
+.accordion-item:before {
+    content: '';
+    background: rgba(237, 235, 234 ) ;
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.accordion-item:active {
+    color: #000
+}
+.accordion-item:active:after {
+    background: transparent;
+}
+.accordion-item:hover:before {
+    opacity: 1;
+}
+
+.accordion-item:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
 
   img {
     width: 402px;
@@ -100,6 +144,7 @@ p{
     max-width: 325px;
 
   }
+  
   }
 
  

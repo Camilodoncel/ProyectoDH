@@ -10,23 +10,22 @@ export const NavbarWrapper = styled.nav`
   flex-direction: column;
   align-items: flex-end;
   position: fixed;
-  top: 0vh;
-  right: ${props => (props.open ? "0" : "-100%")};
-  width: 64%;
+  top:0;
+  right: ${props=> (props.open ? "0" : "-100%")};
+  width: 68%;
   height: 100vh;
-  //transition: right 0.3s linear;
-
+  z-index: 1;
+  transition: right 0.3s linear; 
   #headerMenu{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   background:rgb(34,195,155);
-  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+  background: rgb(34,195,155);
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   position: relative;
 }
-
 #menu{
 padding-right: 12px;
 font-size: 24px;
@@ -34,28 +33,25 @@ position: relative;
 font-weight: 700;
 top: 61%;
 color: #ffff;
-
-
 }
-
 #link{
   padding-top: 14px;
   padding-right: 12px;
 }
-
 #linkTwo{
   padding-top: 0px;
   padding-right: 12px;
 }
-
 a{
   color: #263238;
+  
 }
-
+ #background{
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+ }
   @media only screen and (min-width: 768px) {
     display: none;
   }
-
-
 `;
-

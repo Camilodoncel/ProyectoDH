@@ -237,6 +237,7 @@ export const CalendarStyled = styled.div`
 .rdrMonths {
     display: flex;
     width: 250px;
+    z-index:1;
 }
 }
 

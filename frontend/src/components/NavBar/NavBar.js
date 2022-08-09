@@ -9,8 +9,10 @@ const NavBar = ({open}) => {
     <NavbarWrapper open={open}>
    
     <div id="headerMenu"><p id="menu">MENÚ</p></div>
+    <div id="background">
     <Link to="/register" style={{textDecoration:"none"}}><p id="link">Crear cuenta</p></Link>
     <Link to="/logIn" style={{textDecoration:"none"}}><p id="linkTwo">Iniciar Sesión</p></Link>
+    </div>
  
   </NavbarWrapper>
   
