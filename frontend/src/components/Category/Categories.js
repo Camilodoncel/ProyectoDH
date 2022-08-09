@@ -1,32 +1,31 @@
 import React from "react";
 import CardCategory from "./CardCategory";
 import listCategory from "./listCategory.json";
-import { CointanerStyled } from "./CardCategoryStyled";
+import {Categories, Cointaner } from "./CardCategoryStyled";
 
 const Category = ({list}) => {
   return (
-    <>
-      <div>
+    <Cointaner>
+        <div className="title">
         <h2>Buscar por categoría</h2>
-        <CointanerStyled >
-
+        </div>
+      <div  className="categories">
+        <Categories>
         {listCategory.map((element, index) => {
           return (
-            <>
+            <div>
               <CardCategory
                 key={index}
                 img={element.img}
                 category={element.category}
                 info={element.info}
               />
-            </>
+            </div>
           );
         })}
-
-        
-        </CointanerStyled >
+        </Categories>
       </div>
-    </>
+    </Cointaner>
   );
 };
 

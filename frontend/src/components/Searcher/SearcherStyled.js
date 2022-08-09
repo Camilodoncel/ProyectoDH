@@ -251,6 +251,20 @@ export const SearcherStyled = styled.div`
      height: 40px;
      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
   }
+
+  .css-1s2u09g-control:hover{
+  color:white;
+  border:1px solid white;
+  box-shadow: 0 0 0px rgb(34,195,155),
+                0 0 5px rgb(34,195,155),
+                0 0 5px rgb(34,195,155);
+  background: white ;
+  background: linear-gradient(149deg, #EFE4E4 0%,#EFE4E4  100%);
+}
+.css-1s2u09g-control:hover polyline{
+    stroke-dashoffset: -460;
+}
+
     
   }
 `

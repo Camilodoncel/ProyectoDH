@@ -8,6 +8,7 @@ text-align: center;
 padding: 2rem;
 height: 15vh;
 position: sticky;
+top: 0;
 box-shadow: 1px 1px 5px #d4d4d4;
 
 

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const CardStyled = styled.div`
-  margin: 2%;
-  
+
+  max-width: 370px;
   
  
   .accordion {
@@ -27,7 +27,7 @@ export const CardStyled = styled.div`
   }
 
   img {
-    width: 402px;
+    width: 355px;
     height: 220px;
     padding-right: 2%;
     border-top-left-radius: 1rem;
@@ -41,16 +41,27 @@ p{
 
   h2{
    
-    width: 25rem;
+    width: 360px;
     cursor: pointer;
 
   }
 
   @media screen and (min-width: 641px)  {}
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1365px) {
 
-    margin: 2%;
+    max-width: 340px;
+
+
+
+    img {
+    max-width: 326px;
+    height: 220px;
+    padding-right: 2%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    cursor: pointer;
+  }
   
   
  
@@ -86,7 +97,7 @@ p{
 
   h2{
    
-    width: 25rem;
+    max-width: 325px;
 
   }
   }
@@ -96,17 +107,25 @@ p{
   
 `;
 
-export const CointanerStyled = styled.div`
+export const Cointaner = styled.div`
+display: grid;
+justify-content: center;
+
+`
+export const Categories = styled.section`
 margin-bottom:20px;
-display: flex;
-width: 5%;
-@media screen and (min-width: 641px)  {
-    display: flex;
+display: grid;
+grid-template-columns: auto;
+gap:10px;
+@media screen and (min-width: 768px)  {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:10px
 }
 
-@media screen and (min-width: 1024px) {
-
-    display: flex;
+@media screen and (min-width: 1365px) {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:10px
 }
-
 `

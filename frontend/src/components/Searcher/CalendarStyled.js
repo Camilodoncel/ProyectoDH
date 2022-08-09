@@ -14,7 +14,20 @@ export const CalendarStyled = styled.div`
      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
      text-align: center;
      position: relative;
+     cursor:pointer;
   }
+  .inputBox:hover{
+  color:white;
+  border:1px solid white;
+  box-shadow: 0 0 0px rgb(34,195,155),
+                0 0 5px rgb(34,195,155),
+                0 0 5px rgb(34,195,155);
+  background: white ;
+  background: linear-gradient(149deg, #EFE4E4 0%,#EFE4E4  100%);
+}
+.inputBox:hover polyline{
+    stroke-dashoffset: -460;
+}
 
   .rdrDateDisplay{
     color: rgb(34,195,155) !important;
@@ -101,7 +114,7 @@ export const CalendarStyled = styled.div`
   background-color: white  !important;
 }
 .rdrMonth{
-  width: 320px;
+  width: 340px;
   border:none;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -156,7 +169,7 @@ export const CalendarStyled = styled.div`
   background-color: white !important;
 }
 .rdrMonth{
-  width: 320px;
+  width: 340px;
   height: 223px;
   border: none;
   border-radius: 0 0 20px 20px;
@@ -181,13 +194,13 @@ export const CalendarStyled = styled.div`
      position: 375;
   }
   .rdrDateDisplayWrapper{
-  width: 260px;
+  width: 250px;
   border:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: white !important;
 }
 .rdrMonthAndYearWrapper{
-  width: 260px;
+  width: 250px;
   border:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: white !important;
@@ -208,18 +221,22 @@ export const CalendarStyled = styled.div`
 }
 
 .rdrMonthAndYearWrapper{
-  width: 260px;
+  width: 250px;
   border:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: white !important;
 }
 .rdrMonth{
-  width: 240px;
-  height: 223px;
+  width: 250px;
+  height: 252px;
   border: none;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: white !important;
+},
+.rdrMonths {
+    display: flex;
+    width: 250px;
 }
 }
 
