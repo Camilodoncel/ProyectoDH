@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
-export const LogInStyled = styled.section`
+export const RegisterStyled = styled.div`
+section{
 display: flex;
 flex-direction: column;
 align-items: center;
 width: auto;
 heigth: auto;
-gap: 100px;
-margin-top: 30px;
+gap: 50px;
+margin-top: 150px;
+}
 form{
   display: flex;
   flex-direction: column;
@@ -35,7 +37,7 @@ font-size: 12px;
 line-height: 14px;
 }
 
-button{
+section button {
 background: rgb(34,195,155);
 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
 border-radius: 5px;
@@ -48,22 +50,64 @@ color: white;
 margin-bottom:-35px
 }
 
-.register{
+.logIn{
   cursor: default;
   color:black;
-  margin-bottom: 45px;
 }
-.register a {
+.logIn a {
   font-size: 18px;
   cursor: pointer;
   color:rgb(34,195,155);
+  text-decoration: none;
 
 }
-.register a:hover {
+.logIn a:hover {
   font-size: 18px;
   cursor: pointer;
   color:rgba(90,97,189,1);
 
+}
+
+.userName{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+Header{
+  width: 100%;
+  position: absolute;
+}
+
+Footer{
+  position:sticky;
+  bottom: 0;
+}
+
+@media (min-width: 768px){
+  Footer{
+  position:absolute;
+  bottom: 0;
+}
+}
+
+
+@media (min-width: 1365px){
+  Footer{
+  position:sticky;
+  bottom: 0;
+}
+.userName{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.userName input{
+  width:208px
+}
+form input{
+  width: 448px;
+}
 }
 
 
