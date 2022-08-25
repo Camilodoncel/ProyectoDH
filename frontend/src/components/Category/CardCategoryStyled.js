@@ -22,19 +22,24 @@ export const Section = styled.div`
   .titlePrincipal{
     cursor:default;
     margin-left: -6%;
+    z-index: -1;
   }
   .showAll h4{
-    font-size: 20px;
+    font-size: 15px;
     color: ${colors[0].titles};
     
   }
   .showAll{
     display: flex;
-    gap: 0px;
+    gap: 3px;
+    margin-left: -20px;
+    margin-top: 2px;
   }
   .iconSee{
     color: ${colors[0].principal2};
     margin-top: 4px;
+    font-size: 25px;
+    margin-top: -5px;
   }
    h4 {
     font-size: 20px;
@@ -44,16 +49,19 @@ export const Section = styled.div`
       font-size: 30px;
     }
     .showAll h4{
-    font-size: 30px;
+    font-size: 15px;
     color: ${colors[0].titles};
   }
   .showAll{
     display: flex;
     gap: 10px;
+    margin-left: 120px;
+    margin-top: 15px;
   }
   .iconSee{
     color: ${colors[0].principal2};
-    margin-top: 8px;
+    margin-top: 0px;
+    font-size: 20px;
   }
   .titlePrincipal{
     cursor:default;
@@ -73,6 +81,21 @@ export const Section = styled.div`
   .titlePrincipal{
     margin-left: -70px;
     cursor:default
+  }
+  .showAll{
+    margin-top: 1px;
+    margin-left: 150px;
+  }
+  .showAll h4{
+    font-size: 15px;
+    color: ${colors[0].titles};
+    margin-top: 6px;
+    
+  }
+  .iconSee{
+    color: ${colors[0].principal2};
+    margin-top: 1px;
+    font-size: 25px;
   }
   }
 `;

@@ -27,7 +27,7 @@ const Category = ({ handlerFilter }) => {
           className="showAll"
         >
           {" "}
-          <h4> Mostrar todo </h4>
+          <h4> Ver todo </h4>
           <VisibilityIcon className="iconSee" />
         </button>
       </div>
