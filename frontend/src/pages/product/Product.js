@@ -35,7 +35,7 @@ const Product = () => {
   const [products, setProducts] = useState("");
   const loadData = async () => {
     try {
-      await axios.get(`http://localhost:8080/product/${id}`).then((res) => {
+      await axios.get(`http://18.118.83.144:8080/product/${id}`).then((res) => {
         setProducts(res.data);
       });
     } catch (error) {

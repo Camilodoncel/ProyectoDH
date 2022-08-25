@@ -22,7 +22,7 @@ const ProductList = () => {
 
   const [products, setProducts] = useState([])
   const loadData = () => {
-    axios.get("http://localhost:8080/product")
+    axios.get("http://18.118.83.144:8080/product")
       .then(res => {
         setProducts(res.data)
       })

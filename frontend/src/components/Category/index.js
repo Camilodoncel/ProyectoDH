@@ -10,7 +10,7 @@ const Category = ({ handlerFilter }) => {
   const [categories, setCategories] = useState([]);
   const { setCategorieSelected } = useContext(CategoryContext);
   const loadData = () => {
-    axios.get("http://localhost:8080/category").then((res) => {
+    axios.get("http://18.118.83.144:8080/category").then((res) => {
       setCategories(res.data);
     });
   };
