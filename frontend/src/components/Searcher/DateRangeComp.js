@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { DateRange } from 'react-date-range'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faLocationDot, faMagnifyingGlassLocation} from "@fortawesome/free-solid-svg-icons";
-import format from 'date-fns/format'
+
 import { addDays } from 'date-fns'
 import { CalendarStyled } from './CalendarStyled';
 
@@ -11,7 +9,6 @@ import 'react-date-range/dist/theme/default.css'
 
 
 const DateRangeComp = () => {
-
   // date state
   const date = new Date()
   const [range, setRange] = useState([
@@ -21,7 +18,8 @@ const DateRangeComp = () => {
       key: 'selection'
     }
    ])
-
+   console.log(range[0].startDate.toLocaleDateString())
+   console.log(range[0].endDate.toLocaleDateString())
 
   const [open, setOpen] = useState(false)
 

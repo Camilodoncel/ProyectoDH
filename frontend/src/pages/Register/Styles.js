@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from '../../components/colors.json'
 
 export const RegisterStyled = styled.div`
 section{
@@ -6,27 +7,47 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: auto;
-heigth: auto;
-gap: 50px;
-margin-top: 150px;
+height: auto;
+gap: 20px;
+margin-top: 80px;
 }
 form{
   display: flex;
   flex-direction: column;
-  gap:40px;
+  gap:15px;
   align-items:center;
+}
+
+.icons{
+  position: absolute;
+  margin-top:17px;
+  margin-left: 270px;
+  color: ${colors[0].principal};
+}
+.iconsName{
+  position: absolute;
+  margin-top:17px;
+  margin-left: 270px;
+  color: ${colors[0].principal};
 }
 
 form input {
 width:300px;
 height: 45px;
-background: #FFFFFF;
+background: none;
 box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
 border-radius: 5px;
 margin-top:5px;
+border: 3px solid transparent;
+
+  &:focus{
+    border: 1px solid ${colors[0].principal};
+    outline: none;
+
+  }
 }
 .title{
-color:rgb(34,195,155);
+color:${colors[0].principal};
 font-weight: 700;
 font-size: 24px;
 line-height: 28px;
@@ -35,10 +56,13 @@ line-height: 28px;
 font-weight: 500;
 font-size: 12px;
 line-height: 14px;
+color: ${colors[0].principal};
 }
-
+.error{
+color: red;
+}
 section button {
-background: rgb(34,195,155);
+background: ${colors[0].principal};
 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
 border-radius: 5px;
 height: 40px;
@@ -47,17 +71,19 @@ left: 0px;
 top: 0px;
 border-radius: 5px;
 color: white;
-margin-bottom:-35px
+margin-bottom:-35px;
+border: 1px solid white;
 }
 
 .logIn{
   cursor: default;
   color:black;
+  margin-top:20px;
 }
 .logIn a {
   font-size: 18px;
   cursor: pointer;
-  color:rgb(34,195,155);
+  color:${colors[0].principal};
   text-decoration: none;
 
 }
@@ -71,35 +97,44 @@ margin-bottom:-35px
 .userName{
   display: flex;
   flex-direction: column;
-  gap: 40px;
-}
-Header{
-  width: 100%;
-  position: absolute;
+  gap: 15px;
 }
 
-Footer{
-  position:sticky;
-  bottom: 0;
-}
 
-@media (min-width: 768px){
-  Footer{
-  position:absolute;
-  bottom: 0;
-}
-}
 
 
 @media (min-width: 1365px){
-  Footer{
-  position:sticky;
-  bottom: 0;
+
+.icons{
+  position: absolute;
+  margin-top:17px;
+  margin-left: 415px;
+  color: ${colors[0].principal};
+}
+.iconsName{
+  position: absolute;
+  margin-top:17px;
+  margin-left: 179px;
+  color: ${colors[0].principal};
 }
 .userName{
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap:35px;
+}
+
+.userName input{
+  width:208px
+}
+form input{
+  width: 448px;
+}
+}
+@media (min-width: 1370px){
+
+.userName{
+  display: flex;
+  flex-direction: row;
 }
 
 .userName input{

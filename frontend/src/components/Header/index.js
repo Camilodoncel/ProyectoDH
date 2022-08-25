@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
-import logo from "../assets/Component logo opc 3.png";
-import { HeaderStyled } from "./HeaderStyled";
+import { HeaderStyled, Logo } from "./HeaderStyled";
 import MenuButton from "../MenuButton/MenuButton";
 import NavBar from "../NavBar/NavBar";
+import { CategoryContext } from "../../context/CategoryContext";
 
 const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { setCategorieSelected } = useContext(CategoryContext);
 
   const pathname = location.pathname;
 
@@ -21,8 +22,18 @@ const Header = () => {
     if (pathname === "/register") {
       return (
         <HeaderStyled>
-          <Link to="/">
-            <img src={logo} alt={"logo"} />
+                    <Link
+              onClick={() => {
+                setCategorieSelected("");
+              }}
+              to="/"
+            > 
+            <Logo>
+              <div className="initialContainer">
+                <div className="logo2">HS</div>
+              </div>
+              <div className="slogan">Feels like home</div>
+            </Logo>
           </Link>
           <button className="buttonLogIn" onClick={() => navigate("/logIn")}>
             Iniciar sesión
@@ -32,18 +43,40 @@ const Header = () => {
     } else if (pathname === "/logIn") {
       return (
         <HeaderStyled>
-          <Link to="/">
-            <img src={logo} alt={"logo"} />
+                    <Link
+              onClick={() => {
+                setCategorieSelected("");
+              }}
+              to="/"
+            > 
+            <Logo>
+              <div className="initialContainer">
+                <div className="logo2">HS</div>
+              </div>
+              <div className="slogan">Feels like home</div>
+            </Logo>
           </Link>
           <button onClick={() => navigate("/register")}> Crear cuenta</button>
         </HeaderStyled>
       );
+    }  else if(pathname === "/home"){
+      return null;
     } else {
       return (
         <HeaderStyled>
-          <Link to="/">
-            <img src={logo} alt={"logo"} />
+          <Link
+              onClick={() => {
+                setCategorieSelected("");
+              }}
+              to="/"
+            > 
+            <Logo>
+              <div className="initialContainer">
+                <div className="logo2">HS</div>
+              </div>
+            </Logo>
           </Link>
+          <div className="slogan">Feels like home</div>
           <div className="containerButton">
             <button onClick={() => navigate("/register")}> Crear cuenta</button>
             <button className="buttonLogIn" onClick={() => navigate("/logIn")}>
@@ -55,11 +88,14 @@ const Header = () => {
     }
   };
 
+ 
+
   return (
     <>
       {buttonHeader()}
       <NavBar open={open} />
       <MenuButton open={open} handleClick={handleClick} />
+     
       <Outlet />
     </>
   );

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import colors from "../colors.json"
 
 
 export const NavbarWrapper = styled.nav`
@@ -14,16 +14,15 @@ export const NavbarWrapper = styled.nav`
   right: ${props=> (props.open ? "0" : "-100%")};
   width: 68%;
   height: 100vh;
-  z-index: 1;
+  z-index: 100;
   transition: right 0.3s linear; 
   #headerMenu{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background:rgb(34,195,155);
-  background: rgb(34,195,155);
+  background: ${colors[0].principal};
   width: 100%;
-  height: 30vh;
+  height: 17.8vh;
   position: relative;
 }
 #menu{
@@ -43,13 +42,21 @@ color: #ffff;
   padding-right: 12px;
 }
 a{
-  color: #263238;
+  color: #261704;
+  font-size: 20px;
+  
+  
   
 }
  #background{
-  background-color: white;
+ 
+  backdrop-filter: blur(30px);
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
  }
   @media only screen and (min-width: 768px) {
     display: none;

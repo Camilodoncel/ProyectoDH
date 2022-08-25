@@ -1,7 +1,13 @@
 import styled from "styled-components";
+import colors from '../colors.json'
 export const ProductStyled = styled.section`
 justify-content:center;
 align-items: center;
+.titleSection{
+  color: ${colors[0].principal};
+  display: flex;
+  justify-content: center;
+}
 .productList{
   display: flex;
   flex-direction: column;
@@ -12,13 +18,14 @@ align-items: center;
   display: flex;
   flex-direction: column;
   width: 362px;
-  height: 461px;
+  height: 490px;
   position: relative;
+  border: 1px solid ${colors[0].principal2};
   align-items: center;
   margin: 20px 0 0 0;
-  border: 1px solid #DFE4EA;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 8px 8px;
+  background-color: white;
 }
 .imgProduct{
   height: 231px;
@@ -31,56 +38,60 @@ align-items: center;
 .category{
   font-weight: lighter;
   font-size: 14px;
-  font-family: Quicksand;
+  color: ${colors[0].titles}
 }
 
 .stars{
   margin-left: 5px;
   font-size: 13px;
-  color:rgb(34,195,155);
-  color: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+  color: rgb(212,175,55);
+  color: linear-gradient(0deg, rgba(212,175,75,1) 28%, rgba(212,154,0,1) 100%);
 }
 .title{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: ${colors[0].titles};
 }
 .ubication{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   font-weight: 500;
+  color: ${colors[0].titles};
 }
 .location{
   margin-left:5px;
+  color: ${colors[0].titles};
 }
 .iconLocation{
   font-size:13px;
-  color: #545776;
+  color: ${colors[0].titles};
 }
 
 .icons{
-  visibility: hidden;
+  display:none;
 }
 .map{
-  color: #1DBEB4;
+  color: ${colors[0].principal};
 }
 .description{
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 16.41px;
   max-height: 65px;
+  color: ${colors[0].text};
+  overflow:hidden;
 }
 .verMas{
   width: 100%;
   height: 40px;
-  background:rgb(34,195,155);
-  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+  background: ${colors[0].principal2};
   color: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   border: none;
+}
+li{
+  list-style: none;
 }
 @media (min-width:768px) {
   .productList{
@@ -89,6 +100,11 @@ align-items: center;
   align-items: center;
   justify-content: center;
 }
+
+.caption{
+  margin: 10px;
+  width: 330px;
+}
   .cardProduct{
     display: flex;
     flex-direction: row;
@@ -96,17 +112,13 @@ align-items: center;
     height: 279px;
     align-items: center;
     margin: 20px 0 0 0;
-    border: 1px solid #DFE4EA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
   }
   .imgProduct{
-    height: auto;
-    width: auto;
-    max-width:372px;
-    max-height: 348px;
-    min-width: 372px;
-    object-fit: contain;
+    height: 281px;
+    width: 372px;
+    object-fit: cover;
     border-radius: 8px 0px 0 0;
   }
   .title{
@@ -124,16 +136,12 @@ align-items: center;
     color: #545776;
     gap: 12px;
   }
-  .icon{
-   
-  }
 
   .stars{
   margin-left: 5px;
   font-size: 13px;
-  color:rgb(34,195,155);
-  color: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
 }
+
 }
 @media (min-width:1365px) {
   .productList{
@@ -141,21 +149,21 @@ align-items: center;
   grid-template-columns: auto auto;
   gap: 30px
 }
+
+li{
+  list-style: none;
+}
 .description{
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
   line-height: 16.41px;
   max-height: 50px;
 }
 .verMas:hover{
   color:white;
-  border:1px solid white;
-  box-shadow: 0 0 0px rgb(34,195,155),
-                0 0 5px rgb(34,195,155),
-                0 0 5px rgb(34,195,155);
-  background:rgb(34,195,155);
-  background: linear-gradient(149deg, rgba(34,195,155,1) 0%, rgba(92,185,159,0.6895133053221288) 100%);
+  border:1px solid ${colors[0].titles};
+  background: ${colors[0].principal2};
+  cursor: pointer;
 }
 .verMas:hover polyline{
     stroke-dashoffset: -460;
@@ -165,13 +173,13 @@ align-items: center;
 }
 .cardProduct:before {
     content: '';
-    background: rgba(237, 235, 234 ) ;
+    background: white; 
     position: absolute;
     top: -2px;
     left:-2px;
     background-size: 400%;
     z-index: -1;
-    filter: blur(5px);
+    filter: blur(100px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
@@ -182,9 +190,7 @@ align-items: center;
 .cardProduct:active {
     color: #000
 }
-.cardProduct:active:after {
-    background: transparent;
-}
+
 .cardProduct:hover:before {
     opacity: 1;
 }
@@ -220,12 +226,10 @@ align-items: center;
       }
     }
 .imgProduct{
-    height: auto;
-    width: auto;
-    max-width:372px;
-    height: 348px;
-    min-width: 372px;
-    object-fit: contain;
+    max-width:352px;
+    height: 260px;
+    min-width: 352px;
+    object-fit: cover;
     border-radius: 8px 0px 0 0;
     cursor: default;
   }

@@ -4,4 +4,5 @@ export const SectionHome = styled.section`
 Header{
   z-index: 30
 }
+
 `
