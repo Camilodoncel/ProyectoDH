@@ -16,7 +16,7 @@ function Searcher() {
 
   const [city, setCity] = useState([])
   const loadData = () => {
-    axios.get("http://18.118.83.144:8080/city")
+    axios.get("http://localhost:8080/city")
       .then(res => {
         setCity(res.data)
       })
